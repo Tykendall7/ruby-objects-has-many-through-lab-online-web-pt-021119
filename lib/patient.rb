@@ -22,6 +22,6 @@ class Patient
   end
 
   def doctors
-    appointments.collect { |each_appointment| each_appointment.doctor }
+    @appointments.map {|appointment| appointment.doctor}
   end
 end
