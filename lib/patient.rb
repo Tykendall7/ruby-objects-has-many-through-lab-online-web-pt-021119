@@ -1,5 +1,5 @@
 class Patient
- attr_accessor :name
+ attr_accessor :name, :doctors, :appointments
  @@all=[]
  
  def initialize (name)
