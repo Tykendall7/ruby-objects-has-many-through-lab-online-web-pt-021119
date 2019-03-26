@@ -20,8 +20,8 @@ class Doctor
     Appointment.all.select { |appointment_object| appointment_object.doctor == self }
   end
   
- def patients
-    appointments.map { |appointment| appointment.patient  }
+  def patients
+    appointments.collect { |each_appointment| each_appointment.patient }
   end
     
 end
